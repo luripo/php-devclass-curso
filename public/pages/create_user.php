@@ -1,3 +1,4 @@
+<br>
 <?=get('message');?>
 <br>
 <a href="?page=home " class="bt-style">Página Inicial</a>

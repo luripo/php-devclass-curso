@@ -1,7 +1,7 @@
 <br>
 <a href="?page=create_user" class="bt-style"id="botao">Cadastrar Usuário</a>
 <div><a href="?page=home" class="bt-style">Página Inicial</a>   /   <a href="?page=contato" class="bt-style">   Contato</a></div>
-
+<br>
 <?=get('message');?>
 <table class="table table-striped table-hover">
     <thead>
