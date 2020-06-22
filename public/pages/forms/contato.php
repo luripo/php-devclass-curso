@@ -17,7 +17,7 @@ $validate = validate([
 
 $data = [
 	'quem' => $validate->email,
-	'para' => 'contato@devclass.com.br',
+	'para' => 'lurianep.o@gmail.com',
 	'mensagem' => $validate->message,
 	'assunto' => $validate->subject,
 ];
@@ -26,4 +26,4 @@ if (send($data)) {
 	flash('message', 'Email enviado com sucesso', 'success');
 
 	return redirect("contato");
-}
+} 

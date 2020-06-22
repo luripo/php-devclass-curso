@@ -1,4 +1,7 @@
-<h2>Contato</h2>
+<br>
+<a href="?page=home" class="bt-style">Página Inicial</a>
+<br>
+<h3>Contato</h3>
 
 <?=get('message')?>
 
@@ -23,9 +26,9 @@
 
 
     <div class="form-group">
-        <label for="">mensagem</label>
+        <label for="">Mensagem</label>
         <textarea name="message" cols="30" rows="10" class="form-control"></textarea>
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn button">Enviar</button>
 </form>

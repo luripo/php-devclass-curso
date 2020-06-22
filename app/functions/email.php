@@ -1,15 +1,5 @@
 <?php
 
-// function send($data) {
-// 	$to = 'xandecar@hotmail.com';
-// 	$subject = $data->subject;
-// 	$message = $data->message;
-// 	$headers = "From: {$data->email}" . "\r\n" .
-// 	'Reply-To: contato@devclass.com.br' . "\r\n" .
-// 	'X-Mailer: PHP/' . phpversion();
-
-// 	return mail($to, $subject, $message, $headers);
-// }
 
 function send(array $data) {
 	$email = new PHPMailer\PHPMailer\PHPMailer;
@@ -19,10 +9,10 @@ function send(array $data) {
 	$email->Host = 'smtp.mailtrap.io';
 	$email->Port = 465;
 	$email->SMTPAuth = true;
-	$email->Username = '512bf67bbc891e';
-	$email->Password = 'e9591bd8a9c5cd';
+	$email->Username = '9481d1cecc7c01';
+	$email->Password = 'b0a07a604dacb4';
 	$email->isHTML(true);
-	$email->setFrom('xandecar@hotmail.com');
+	$email->setFrom('lurianep.o@gmail.com');
 	$email->FromName = $data['quem'];
 	$email->addAddress($data['para']);
 	$email->Body = $data['mensagem'];

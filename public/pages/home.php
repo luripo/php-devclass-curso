@@ -1,6 +1,6 @@
-<a href="?page=create_user">Cadastrar user</a>
-
-<h2>Página inicial</h2>
+<br>
+<a href="?page=create_user" class="bt-style"id="botao">Cadastrar Usuário</a>
+<div><a href="?page=home" class="bt-style">Página Inicial</a>   /   <a href="?page=contato" class="bt-style">   Contato</a></div>
 
 <?=get('message');?>
 <table class="table table-striped table-hover">
@@ -11,6 +11,7 @@
             <th>Email</th>
             <th></th>
             <th></th>
+           
         </tr>
     </thead>
     <tbody>
@@ -23,10 +24,10 @@ foreach ($users as $user):
             <td><?=$user->name;?></td>
             <td><?=$user->email;?></td>
             <td>
-                <a href="?page=edit_user&id=<?=$user->id;?>" class="btn btn-success">Editar</a>
+                <a href="?page=edit_user&id=<?=$user->id;?>" class="btn btn-success btn-sm">Editar</a>
             </td>
             <td>
-                <a href="?page=delete_user&id=<?=$user->id;?>" class="btn btn-danger">Deletar</a>
+                <a href="?page=delete_user&id=<?=$user->id;?>" class="btn btn-danger btn-sm">Excluir</a>
             </td>
         </tr>
     <?php endforeach;?>

@@ -8,5 +8,5 @@ if ($deletado) {
 	return redirectToHome();
 }
 
-flash('message', 'Erro ao deletar');
-redirectToHome();
+flash('message', 'Erro ao deletar!');
+redirectToHome(); 
